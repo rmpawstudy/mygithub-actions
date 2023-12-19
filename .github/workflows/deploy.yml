@@ -1,10 +1,11 @@
 ---
 name: "Simple Git Hub Work Flow Actions" 
 
-on: push
-  branches:
-    - master
-    - testing
+on: 
+  push
+    branches:
+      - master
+      - testing
 
 jobs:
 

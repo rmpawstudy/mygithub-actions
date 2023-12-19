@@ -2,7 +2,8 @@
 name: "Simple Git Hub Work Flow Actions" 
 
 on: 
-  push
+  
+  push:
     branches:
       - master
       - testing

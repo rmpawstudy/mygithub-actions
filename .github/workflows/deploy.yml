@@ -50,7 +50,9 @@ jobs:
           ./script.sh
 
       - name: "Terraform Installation"
-        run: |
-          wget https://releases.hashicorp.com/terraform/1.6.6/terraform_1.6.6_linux_amd64.zip
-          unzip terraform_1.6.6_linux_amd64.zip
-          ./terraform version
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.6.6"
+
+      - name: "Terrafoirm Version"
+        run: terraform version
